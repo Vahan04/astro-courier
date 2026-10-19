@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Astro Courier</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">DEEP SPACE DELIVERY</p>
+          <h1>Astro Courier</h1>
+        </div>
+        <div class="stats" aria-live="polite">
+          <div><span>Score</span><strong id="score">0</strong></div>
+          <div><span>Best</span><strong id="best">0</strong></div>
+          <div><span>Level</span><strong id="level">1</strong></div>
+        </div>
+      </header>
+
+      <section class="canvas-wrap">
+        <canvas id="game" aria-label="Astro Courier game"></canvas>
+        <div id="overlay" class="overlay">
+          <p class="eyebrow">MISSION CONTROL</p>
+          <h2 id="overlay-title">Deliver the energy</h2>
+          <p id="overlay-text">Collect crystals, dodge asteroids, and survive as long as you can.</p>
+          <button id="start-button">Launch mission</button>
+        </div>
+      </section>
+
+      <footer class="controls">
+        <span><kbd>WASD</kbd> or <kbd>Arrow keys</kbd> to move</span>
+        <span>Collect <b class="cyan">◆</b> crystals</span>
+        <span>Avoid <b class="orange">●</b> asteroids</span>
+      </footer>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
